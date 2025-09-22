@@ -1,11 +1,11 @@
-name: hello-world
+name: main
 on: [push]
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: action/checkout@v2
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
 
-    - name: print text from file index
-      run: echo "Hello World!"
+        - name: Print text from file.txt
+          run: cat dist/index.js
