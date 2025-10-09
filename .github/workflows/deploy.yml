@@ -52,6 +52,6 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v3
         with:
-          subject-name: index.docker.io/narumark/test1
+          subject-name: index.docker.io/optimistic2548/test
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
